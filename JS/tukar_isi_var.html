@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tukar isi variable</h1>
+    <script>
+        var var1,var2,vars
+        var1=prompt('masukkan data 1=',var1)
+        var2=prompt('masukkan data 2 =',var2)
+        document.write('isi variable sebelum di tukar =<br />')
+        document.write('isi variable 1='+var1+'<br /> var2='+var2)
+        // Penukaran
+        vars=var1
+        var1=var2
+        var2=vars
+        document.write('<br /> isi variable di tukar <br />')
+        document.write('isi var 1 ='+var1+'<br /> var 2 ='+var2)
+    </script>
+</body>
+</html>

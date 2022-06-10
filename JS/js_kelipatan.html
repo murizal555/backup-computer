@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KELIPATAN</title>
+</head>
+<body>
+<h1>konstruksi pemilihan: IF THAN ELSE</h1>    
+<h2>penentuan kelipatan bilangam</h2>
+<script>
+    var bil,kelipatan,jenis
+    bil=0
+    kelipatan=2
+    jenis=""
+    bil=prompt('input bilangan bulat',bil)
+    kelipatan=prompt('bilangan kelipatan',kelipatan)
+    bil=eval(kelipatan)
+    if ((bil% kelipatan)==0){
+        jenis='bilangan kelipatan'
+    }
+    document.write('<br />bilangan '+bil+'adalah'+jenis+""+kelipatan)
+</script>
+</body>
+</html>

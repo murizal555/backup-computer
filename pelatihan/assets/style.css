@@ -1,0 +1,155 @@
+/* load googl font */
+/* portofolio form version 0,1
+last modified:2 maret 2022
+author: murizal
+email: murrizal023@gmail.com
+
+file: style.css
+description:style for portofolio
+licence under GPL */
+
+/* load google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* variable CSS */
+
+:root{
+    --heder-height:3rem;
+    /* color */
+    /* masukkan sesuai keinginan */
+    --hue-color:250; /*ungu 250-hijau-142-biru 230-pink 340*/
+    /* hsl Color mode */
+    --first-color:hsl(var(--hue-color),69%,61%);
+    --first-color-second:hsl(var(--hue-color),69%,61%);
+    --first-color-alt:hsl(var(--hue-color),57%,53%);
+    --first-color-lighter:hsl(var(--hue-color),92%,85%);
+    --tittle-color:hsl(var(--hue-color),8%,18%);
+    --text-color:hsl(var(--hue-color),8%,45%);
+    --text-color-light:hsl(var(--hue-color),8%,65%);
+    --input-color:hsl(var(--hue-color),70%,96%);
+    --body-color:hsl(var(--hue-color),60%,99%);   
+    --container-color:#fff;
+
+    /* font and typografy */
+    --body-font:'poppins',sans-serif;
+    /* .5rem=8px, 1rem=16px,1,5rem=24px */
+    --big-font-size:2rem;
+    --h1-font-size:1.5rem;
+    --h2-font-size:1.25rem;
+    --h3-font-size:1.125rem;
+    --normal-font-size:.938rem;
+    --small-font-size:.813rem;
+    --smaller-font-size:75rem;
+
+    /* font weight */
+    --font-medium:500;
+    --font-semi-bold:600;
+
+    /* margener button */
+    /* 2.rem=4px,.5rem=8px,75rem=12px */
+    --mb-0-25:.25rem;
+    --mb-0-5:.5rem;
+    --mb-0-75:.75rem;
+    --mb-1-:.1rem;
+    --mb-1-5:1.5rem;
+    --mb-2-:2rem;
+    --mb-3-5:2.5rem;
+    --mb-3-:3rem;
+    /* Z index */
+    --z-tooltip:10;
+    --z-fixed:100;
+    --z-modal:1000;
+    }
+    /* font size for large device */
+    @media screen and(min-with:965px) {
+        :root{
+        --big-font-size:3rem;
+        --h1-font-size:2.25rem;
+        --h2-font-size:1rem;
+        --h3-font-size:1.25rem;
+        --normal-font-size:1rem;
+        --small-font-size:.875rem;
+        --smaller-font-size:.819;
+    /* ukuran fontunntuk perangkat yang besar */
+    
+}
+};
+/* variable dark theme */
+/* buttom dark/lighttv */
+/* base */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+scroll-behavior: smooth;
+}
+body{
+    margin: 0 0 var(--heder-height)0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--text-color);
+}
+h1,h2,h3,h4{
+    color: var(--tittle-color);
+    font-weight: var(--font-semi-bold);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* reusable CSS classes */
+.sectoin{
+    padding: 2rem 0 4rem ;
+}
+.section_title{
+    font-size: var(--h1-font-size);
+}
+.sectoin_subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3-);
+}
+.section_title,
+.sectoin_subtitle{
+    text-align: center;
+}
+/* layuot */
+.container{
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+}
+.grid{
+    display: grid;
+    gap:1.5rem;
+}
+/* nav */
+/* show menu */
+/* active link  */
+/* change background headeer  */
+/* home  */
+/* buttom  */
+/* about  */
+/* skills */
+/* qualificaton */
+/* servivce */
+/* active modal  */
+/* portofolio */
+/* project in mind  */
+/* testimonal */
+/* contac me */
+/* footer */
+/* scrool up  */
+/* show scroll  */
+/* scroll bar  */
+/* media queries */
+/* for small device */
+/* fer mediom device */

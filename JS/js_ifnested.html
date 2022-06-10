@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>if nested than else </h1>
+    <script>
+        var pegawai,jammasuk,jamkeluar,jamlembur
+        var jamkerja,gapok,lembur,potongan
+        jamkerja=8
+        gapok=100000
+        lembur=2000
+        potongan=1000
+        gaji=0
+        namapegawai=prompt('masukkan nama pegawai') // nama pegawai ini akan msuk sebagai value pegawai yang bertype data string
+        jammasuk=prompt('masukkan jam masuk','08.00')
+        jamkeluar=prompt('masukkan jam keluar')
+        jamlembur=jamkeluar-eval(jammasuk)-eval(jamkerja)
+        if(jamlembur== 0){
+            gaji=gapok
+        }else{
+        if (jamlembur >0){
+            gaji=gapok+jamlembur*lembur //variable gaji di isi oleh gapok tambah jam lembur kali lembur
+        }else{
+            jamkurang=jamlembur*-1  //jam kurang akan diisi oleh jumlah jamlembur dan jam lembur kali -1 
+            gaji=gapok-jamkurang*potongan //gaji ini kosong sehingga diisi oleh gapok dan gapok di kurangi dengan jam kurang dan di kali potongan
+        }
+            document.write('<br />nama pegawai ='+namapegawai)
+            document.write('<br />jam keluar ='+jammasuk)
+            document.write('<br />jam masuk ='+jamkeluar)
+            document.write('<br /> gaji pokok ='+gapok)
+            document.write('<br /> lembur ='+jamlembur+'jam')
+            document.write('<br /> gaji  ='+gaji)
+        }
+    </script>
+</body>
+</html>

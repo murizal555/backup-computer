@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gabut</title>
+</head>
+<body>
+    <h1> apakah saya gabut hari ini ?</h1>
+    <script>
+        var v,c,m
+        strInfo="menampilkan sederetan angka. \n <br/>"
+        strInfo="angka awal dan angka akhir di tentukan oleh anda"
+        m=prompt("angka awal :")
+        n=prompt("masukkan akhir:")
+        m=eval(m)
+        n=eval(n)
+        document.write(strInfo+"<br/>")
+        document.write("angka awal"+m+"<br/>")
+        document.write("anka akhir"+n+"<br\>")
+        for(c=m; c<=n; c++){
+            document.write("angka :"+c)
+            document.write("<br/>")
+        }
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>konstanta</title>
+</head>
+<body style="color: blue; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+    <div style="border: 56px;">
+
+        <h2>hitung luas dan keliling lingkaran </h2>
+        <script>
+            const pi=22/7
+            var jari2=28
+            luas=pi*jari2**2
+            keliling=2*pi*jari2
+            document.write("pi="+pi+"<br />")
+            document.write("jari-jari ="+jari2+"<br />")
+            document.write("luas    ="+luas+ "<br />") 
+            document.write("keliling=" +keliling+"<br />")
+            </script>
+    <h2>coba ubah nilai konstanta -PI</h2>
+    <h3>di bawah ini tidak bisa berjalan karena belum di deklarasikan </h3>
+    <script>
+        // deklarasi jadi konstanta
+        const P1=0;
+        PI++;
+        document.write('nilai konstanta PI ='+PI+'<br />')
+        //deklarasi  ulang di bawah ini juga akan gagal!
+        var Pi=0;
+        let Pi=0;
+        const Pi=0;
+        document.write('nilai konstanta PI ='+Pi+'<br />') 
+        </script>
+        </div>
+</body>
+</html>

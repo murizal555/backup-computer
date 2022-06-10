@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>membilang angka</h1>
+    <script>
+        var bil,text
+        bil=0
+        text=""
+        bil=prompt("masukkkan angka(0...9):")
+        bil=+eval(bil)
+        switch(bil){
+            case 1:  
+            text="satu"
+            break
+            case 2:
+                text="dua"
+        }
+        document.write("<br/> Angka di input ="+bil)
+        document.write("<br/> terbilang ="+text)
+</script>
+</body>
+</html>

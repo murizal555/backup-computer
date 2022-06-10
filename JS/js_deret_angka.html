@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html style="color: red; font-style: italic;"> contoh menampilkan sederet angka </html>
+    <script> 
+    var v,c,m 
+    strInfo="apliksasi ini akan menampilkan sederet angka berurut. \n <br/>"
+    strInfo=strInfo+"angka awal dan angka akhir di tentuksn oleh anda!"
+    m=prompt("masukkan angka awal :")
+    n=prompt("masukkan akngka akhir")
+    m=eval(m)
+    n=eval(n)
+    document.write(strInfo+"<br/>")
+    document.write("angka awal:"+m+"<br/>")
+    document.write("angka akhir"+n+"<br/>")
+    for(c=m;c<=n;c++){
+        document.write("angka:"+c)
+        document.write("<br/>")
+    }
+    </script>
+</body>
+</html>

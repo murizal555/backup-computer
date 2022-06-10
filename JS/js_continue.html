@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:aqua;">contoh continue #1</h1>
+    <h3 style="color: blue;">itung jumlah bilangan dari 1-5, sampai setelah sampai 3 program di paksa keluar</h3>
+    <div class="a" style="font-size: xx-large;color: chartreuse;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <script>
+        i=0
+        n=0
+        x=0
+        beforeWhile:
+        while (x<2){
+            x++
+            if(x==2)
+            break
+            while(i<5){ 
+                i++
+                if (i==3)
+                continue beforeWhile
+                n+=i
+            }
+        }
+        document.write(n);
+    </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>perbedaan let dan var</h1>
+    <script>
+        document.write("menggunakan var!<br />")
+        for(var i=0; i<5; i++){
+            document.write('<br /> isi variable i='+i)
+        }
+        document.write('<br />isi variable i='+i+"<br />")
+        document.write('<br />')
+        document.write('ini let <br />') //let hanya bisa deklarasikan dalam for saja 
+        for(let a=0; a<5; a++){
+            document.write('isi varible a='+a+'<br />')
+        }
+        document.write('isi Variable a='+a+"<br>") //tidak di baca
+    </script> 
+</body>
+</html>
