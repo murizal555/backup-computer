@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if than</title>
+</head>
+<body>
+    <h1>konstruksi  pemilihan  IF THAN </h1>
+    <h2>HITUNG GAJI KARIAWAN</h2>
+    <script>
+        var namapegawai,jammasuk,jamkeluar,jamlembur
+        var jamkerja,gapok,lembur,potongan
+        jamkerja=8
+        gapok=100000
+        lembur=2000
+        potongan=1000
+        gaji=0
+        namapegawai=prompt('nama pegawai')
+        jammasuk=prompt('jam masuk','08.00')
+        jamkeluar=prompt('jam keluar','16.00')
+        jamlembur=jamkeluar-eval(jammasuk)-eval(jamkerja)
+        gaji=gapok
+        
+        if(jamlembur >0) gaji=gaji+jamlembur*lembur*potongan
+        document.write('<br /> nama pegawai ='+namapegawai)
+        document.write('<br /> jam masuk ='+jammasuk)
+        document.write('<br /> jam keluar ='+jamkeluar)
+        document.write('<br />lembur ='+jamlembur+'jam')
+        document.write('<br /> gaji ='+gaji)
+    </script>
+</body>
+</html>
