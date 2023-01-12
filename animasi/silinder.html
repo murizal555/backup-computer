@@ -1,0 +1,8 @@
+<input id="mySilinder" type="range" min="0" max="100" value="0" />
+<div id="result">0</div>
+<script>
+  mySilinder.oninput = showSilinderValue;
+  function showSilinderValue() {
+    result.innerText = this.value;
+  }
+</script>
